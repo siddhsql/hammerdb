@@ -1,0 +1,10 @@
+hammerdb>print vuconf
+Virtual Users = 10
+User Delay(ms) = 500
+Repeat Delay(ms) = 500
+Iterations = 1
+Show Output = 1
+Log Output = 1
+Unique Log Name = 0
+No Log Buffer = 0
+Log Timestamps = 0

@@ -1,0 +1,1214 @@
+root@clickhouse-1:/home/hammerdb/HammerDB-4.7# ./hammerdbcli
+HammerDB CLI v4.7
+Copyright (C) 2003-2023 Steve Shaw
+Type "help" for a list of commands
+Initialized SQLite on-disk database /tmp/hammer.DB using existing tables (4,370,432 KB)
+hammerdb>vustatus
+No Virtual Users found
+
+hammerdb>print vuconf
+Virtual Users = 1
+User Delay(ms) = 500
+Repeat Delay(ms) = 500
+Iterations = 1
+Show Output = 1
+Log Output = 0
+Unique Log Name = 0
+No Log Buffer = 0
+Log Timestamps = 0
+
+hammerdb>vuset vu 100
+
+hammerdb>vuset logtotemp 1
+
+hammerdb>print dict
+Dictionary Settings for PostgreSQL
+connection {
+ pg_host    = x.x.x.x
+ pg_port    = 5432
+ pg_sslmode = prefer
+}
+tpcc       {
+ pg_count_ware       = 400
+ pg_num_vu           = 100
+ pg_superuser        = hammerdb
+ pg_superuserpass    = xxx
+ pg_defaultdbase     = hammerdb
+ pg_user             = hammerdb
+ pg_pass             = xxx
+ pg_dbase            = hammerdb
+ pg_tspace           = pg_default
+ pg_vacuum           = false
+ pg_dritasnap        = false
+ pg_oracompat        = false
+ pg_cituscompat      = false
+ pg_storedprocs      = false
+ pg_partition        = false
+ pg_total_iterations = 60000000
+ pg_raiseerror       = true
+ pg_keyandthink      = false
+ pg_driver           = timed
+ pg_rampup           = 2
+ pg_duration         = 30
+ pg_allwarehouse     = true
+ pg_timeprofile      = false
+ pg_async_scale      = false
+ pg_async_client     = 1
+ pg_async_verbose    = false
+ pg_async_delay      = 1000
+ pg_connect_pool     = false
+}
+
+hammerdb>vucreate
+Script loaded, Type "print script" to view
+Vuser 1 created MONITOR - WAIT IDLE
+Vuser 2 created - WAIT IDLE
+Vuser 3 created - WAIT IDLE
+Vuser 4 created - WAIT IDLE
+Vuser 5 created - WAIT IDLE
+Vuser 6 created - WAIT IDLE
+Vuser 7 created - WAIT IDLE
+Vuser 8 created - WAIT IDLE
+Vuser 9 created - WAIT IDLE
+Vuser 10 created - WAIT IDLE
+Vuser 11 created - WAIT IDLE
+Vuser 12 created - WAIT IDLE
+Vuser 13 created - WAIT IDLE
+Vuser 14 created - WAIT IDLE
+Vuser 15 created - WAIT IDLE
+Vuser 16 created - WAIT IDLE
+Vuser 17 created - WAIT IDLE
+Vuser 18 created - WAIT IDLE
+Vuser 19 created - WAIT IDLE
+Vuser 20 created - WAIT IDLE
+Vuser 21 created - WAIT IDLE
+Vuser 22 created - WAIT IDLE
+Vuser 23 created - WAIT IDLE
+Vuser 24 created - WAIT IDLE
+Vuser 25 created - WAIT IDLE
+Vuser 26 created - WAIT IDLE
+Vuser 27 created - WAIT IDLE
+Vuser 28 created - WAIT IDLE
+Vuser 29 created - WAIT IDLE
+Vuser 30 created - WAIT IDLE
+Vuser 31 created - WAIT IDLE
+Vuser 32 created - WAIT IDLE
+Vuser 33 created - WAIT IDLE
+Vuser 34 created - WAIT IDLE
+Vuser 35 created - WAIT IDLE
+Vuser 36 created - WAIT IDLE
+Vuser 37 created - WAIT IDLE
+Vuser 38 created - WAIT IDLE
+Vuser 39 created - WAIT IDLE
+Vuser 40 created - WAIT IDLE
+Vuser 41 created - WAIT IDLE
+Vuser 42 created - WAIT IDLE
+Vuser 43 created - WAIT IDLE
+Vuser 44 created - WAIT IDLE
+Vuser 45 created - WAIT IDLE
+Vuser 46 created - WAIT IDLE
+Vuser 47 created - WAIT IDLE
+Vuser 48 created - WAIT IDLE
+Vuser 49 created - WAIT IDLE
+Vuser 50 created - WAIT IDLE
+Vuser 51 created - WAIT IDLE
+Vuser 52 created - WAIT IDLE
+Vuser 53 created - WAIT IDLE
+Vuser 54 created - WAIT IDLE
+Vuser 55 created - WAIT IDLE
+Vuser 56 created - WAIT IDLE
+Vuser 57 created - WAIT IDLE
+Vuser 58 created - WAIT IDLE
+Vuser 59 created - WAIT IDLE
+Vuser 60 created - WAIT IDLE
+Vuser 61 created - WAIT IDLE
+Vuser 62 created - WAIT IDLE
+Vuser 63 created - WAIT IDLE
+Vuser 64 created - WAIT IDLE
+Vuser 65 created - WAIT IDLE
+Vuser 66 created - WAIT IDLE
+Vuser 67 created - WAIT IDLE
+Vuser 68 created - WAIT IDLE
+Vuser 69 created - WAIT IDLE
+Vuser 70 created - WAIT IDLE
+Vuser 71 created - WAIT IDLE
+Vuser 72 created - WAIT IDLE
+Vuser 73 created - WAIT IDLE
+Vuser 74 created - WAIT IDLE
+Vuser 75 created - WAIT IDLE
+Vuser 76 created - WAIT IDLE
+Vuser 77 created - WAIT IDLE
+Vuser 78 created - WAIT IDLE
+Vuser 79 created - WAIT IDLE
+Vuser 80 created - WAIT IDLE
+Vuser 81 created - WAIT IDLE
+Vuser 82 created - WAIT IDLE
+Vuser 83 created - WAIT IDLE
+Vuser 84 created - WAIT IDLE
+Vuser 85 created - WAIT IDLE
+Vuser 86 created - WAIT IDLE
+Vuser 87 created - WAIT IDLE
+Vuser 88 created - WAIT IDLE
+Vuser 89 created - WAIT IDLE
+Vuser 90 created - WAIT IDLE
+Vuser 91 created - WAIT IDLE
+Vuser 92 created - WAIT IDLE
+Vuser 93 created - WAIT IDLE
+Vuser 94 created - WAIT IDLE
+Vuser 95 created - WAIT IDLE
+Vuser 96 created - WAIT IDLE
+Vuser 97 created - WAIT IDLE
+Vuser 98 created - WAIT IDLE
+Vuser 99 created - WAIT IDLE
+Vuser 100 created - WAIT IDLE
+Vuser 101 created - WAIT IDLE
+Logging activated
+to /tmp/hammerdb.log
+101 Virtual Users Created with Monitor VU
+
+hammerdb>vurun
+Vuser 1:RUNNING
+Vuser 1:Beginning rampup time of 2 minutes
+Vuser 2:RUNNING
+Vuser 3:RUNNING
+Vuser 2:VU 2 : Assigning WID=1 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 2:VU 2 : Assigning WID=101 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 2:VU 2 : Assigning WID=201 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 2:VU 2 : Assigning WID=301 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 2:Processing 60000000 transactions with output suppressed...
+Vuser 4:RUNNING
+Vuser 3:VU 3 : Assigning WID=2 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 3:VU 3 : Assigning WID=102 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 3:VU 3 : Assigning WID=202 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 3:VU 3 : Assigning WID=302 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 3:Processing 60000000 transactions with output suppressed...
+Vuser 5:RUNNING
+Vuser 4:VU 4 : Assigning WID=3 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 4:VU 4 : Assigning WID=103 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 4:VU 4 : Assigning WID=203 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 4:VU 4 : Assigning WID=303 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 4:Processing 60000000 transactions with output suppressed...
+Vuser 6:RUNNING
+Vuser 5:VU 5 : Assigning WID=4 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 5:VU 5 : Assigning WID=104 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 5:VU 5 : Assigning WID=204 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 5:VU 5 : Assigning WID=304 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 5:Processing 60000000 transactions with output suppressed...
+Vuser 7:RUNNING
+Vuser 6:VU 6 : Assigning WID=5 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 6:VU 6 : Assigning WID=105 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 6:VU 6 : Assigning WID=205 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 6:VU 6 : Assigning WID=305 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 6:Processing 60000000 transactions with output suppressed...
+Vuser 8:RUNNING
+Vuser 7:VU 7 : Assigning WID=6 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 7:VU 7 : Assigning WID=106 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 7:VU 7 : Assigning WID=206 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 7:VU 7 : Assigning WID=306 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 7:Processing 60000000 transactions with output suppressed...
+Vuser 9:RUNNING
+Vuser 8:VU 8 : Assigning WID=7 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 8:VU 8 : Assigning WID=107 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 8:VU 8 : Assigning WID=207 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 8:VU 8 : Assigning WID=307 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 8:Processing 60000000 transactions with output suppressed...
+Vuser 10:RUNNING
+Vuser 9:VU 9 : Assigning WID=8 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 9:VU 9 : Assigning WID=108 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 9:VU 9 : Assigning WID=208 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 9:VU 9 : Assigning WID=308 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 9:Processing 60000000 transactions with output suppressed...
+Vuser 11:RUNNING
+Vuser 10:VU 10 : Assigning WID=9 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 10:VU 10 : Assigning WID=109 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 10:VU 10 : Assigning WID=209 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 10:VU 10 : Assigning WID=309 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 10:Processing 60000000 transactions with output suppressed...
+Vuser 12:RUNNING
+Vuser 11:VU 11 : Assigning WID=10 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 11:VU 11 : Assigning WID=110 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 11:VU 11 : Assigning WID=210 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 11:VU 11 : Assigning WID=310 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 11:Processing 60000000 transactions with output suppressed...
+Vuser 13:RUNNING
+Vuser 12:VU 12 : Assigning WID=11 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 12:VU 12 : Assigning WID=111 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 12:VU 12 : Assigning WID=211 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 12:VU 12 : Assigning WID=311 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 12:Processing 60000000 transactions with output suppressed...
+Vuser 14:RUNNING
+Vuser 13:VU 13 : Assigning WID=12 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 13:VU 13 : Assigning WID=112 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 13:VU 13 : Assigning WID=212 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 13:VU 13 : Assigning WID=312 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 13:Processing 60000000 transactions with output suppressed...
+Vuser 15:RUNNING
+Vuser 14:VU 14 : Assigning WID=13 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 14:VU 14 : Assigning WID=113 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 14:VU 14 : Assigning WID=213 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 14:VU 14 : Assigning WID=313 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 14:Processing 60000000 transactions with output suppressed...
+Vuser 16:RUNNING
+Vuser 15:VU 15 : Assigning WID=14 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 15:VU 15 : Assigning WID=114 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 15:VU 15 : Assigning WID=214 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 15:VU 15 : Assigning WID=314 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 15:Processing 60000000 transactions with output suppressed...
+Vuser 17:RUNNING
+Vuser 16:VU 16 : Assigning WID=15 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 16:VU 16 : Assigning WID=115 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 16:VU 16 : Assigning WID=215 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 16:VU 16 : Assigning WID=315 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 16:Processing 60000000 transactions with output suppressed...
+Vuser 18:RUNNING
+Vuser 17:VU 17 : Assigning WID=16 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 17:VU 17 : Assigning WID=116 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 17:VU 17 : Assigning WID=216 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 17:VU 17 : Assigning WID=316 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 17:Processing 60000000 transactions with output suppressed...
+Vuser 19:RUNNING
+Vuser 18:VU 18 : Assigning WID=17 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 18:VU 18 : Assigning WID=117 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 18:VU 18 : Assigning WID=217 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 18:VU 18 : Assigning WID=317 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 18:Processing 60000000 transactions with output suppressed...
+Vuser 20:RUNNING
+Vuser 19:VU 19 : Assigning WID=18 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 19:VU 19 : Assigning WID=118 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 19:VU 19 : Assigning WID=218 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 19:VU 19 : Assigning WID=318 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 19:Processing 60000000 transactions with output suppressed...
+Vuser 21:RUNNING
+Vuser 20:VU 20 : Assigning WID=19 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 20:VU 20 : Assigning WID=119 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 20:VU 20 : Assigning WID=219 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 20:VU 20 : Assigning WID=319 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 20:Processing 60000000 transactions with output suppressed...
+Vuser 22:RUNNING
+Vuser 21:VU 21 : Assigning WID=20 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 21:VU 21 : Assigning WID=120 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 21:VU 21 : Assigning WID=220 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 21:VU 21 : Assigning WID=320 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 21:Processing 60000000 transactions with output suppressed...
+Vuser 23:RUNNING
+Vuser 22:VU 22 : Assigning WID=21 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 22:VU 22 : Assigning WID=121 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 22:VU 22 : Assigning WID=221 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 22:VU 22 : Assigning WID=321 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 22:Processing 60000000 transactions with output suppressed...
+Vuser 24:RUNNING
+Error in Virtual User 7: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 7:FINISHED FAILED
+Vuser 23:VU 23 : Assigning WID=22 based on VU count 100, Warehouses = 400 (1 out of 4)
+Error in Virtual User 6: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 6:FINISHED FAILED
+Vuser 23:VU 23 : Assigning WID=122 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 23:VU 23 : Assigning WID=222 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 23:VU 23 : Assigning WID=322 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 23:Processing 60000000 transactions with output suppressed...
+Vuser 25:RUNNING
+Vuser 24:VU 24 : Assigning WID=23 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 24:VU 24 : Assigning WID=123 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 24:VU 24 : Assigning WID=223 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 24:VU 24 : Assigning WID=323 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 24:Processing 60000000 transactions with output suppressed...
+Vuser 26:RUNNING
+Vuser 25:VU 25 : Assigning WID=24 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 25:VU 25 : Assigning WID=124 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 25:VU 25 : Assigning WID=224 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 25:VU 25 : Assigning WID=324 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 25:Processing 60000000 transactions with output suppressed...
+Vuser 27:RUNNING
+Vuser 26:VU 26 : Assigning WID=25 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 26:VU 26 : Assigning WID=125 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 26:VU 26 : Assigning WID=225 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 26:VU 26 : Assigning WID=325 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 26:Processing 60000000 transactions with output suppressed...
+Vuser 28:RUNNING
+Vuser 27:VU 27 : Assigning WID=26 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 27:VU 27 : Assigning WID=126 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 27:VU 27 : Assigning WID=226 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 27:VU 27 : Assigning WID=326 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 27:Processing 60000000 transactions with output suppressed...
+Vuser 29:RUNNING
+Vuser 28:VU 28 : Assigning WID=27 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 28:VU 28 : Assigning WID=127 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 28:VU 28 : Assigning WID=227 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 28:VU 28 : Assigning WID=327 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 28:Processing 60000000 transactions with output suppressed...
+Vuser 30:RUNNING
+Vuser 29:VU 29 : Assigning WID=28 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 29:VU 29 : Assigning WID=128 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 29:VU 29 : Assigning WID=228 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 29:VU 29 : Assigning WID=328 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 29:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 2: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 2:FINISHED FAILED
+Error in Virtual User 4: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 4:FINISHED FAILED
+Vuser 31:RUNNING
+Error in Virtual User 25: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 25:FINISHED FAILED
+Vuser 30:VU 30 : Assigning WID=29 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 30:VU 30 : Assigning WID=129 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 30:VU 30 : Assigning WID=229 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 30:VU 30 : Assigning WID=329 based on VU count 100, Warehouses = 400 (4 out of 4)
+Error in Virtual User 30: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on conflict out to pivot 6214880, during read.
+HINT:  The transaction might succeed if retried.
+
+Vuser 30:FINISHED FAILED
+Error in Virtual User 13: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 13:FINISHED FAILED
+Error in Virtual User 14: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 14:FINISHED FAILED
+Vuser 32:RUNNING
+Vuser 31:VU 31 : Assigning WID=30 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 31:VU 31 : Assigning WID=130 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 31:VU 31 : Assigning WID=230 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 31:VU 31 : Assigning WID=330 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 31:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 12: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 12:FINISHED FAILED
+Error in Virtual User 11: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 11:FINISHED FAILED
+Vuser 33:RUNNING
+Vuser 32:VU 32 : Assigning WID=31 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 32:VU 32 : Assigning WID=131 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 32:VU 32 : Assigning WID=231 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 32:VU 32 : Assigning WID=331 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 32:Processing 60000000 transactions with output suppressed...
+Vuser 34:RUNNING
+Vuser 33:VU 33 : Assigning WID=32 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 33:VU 33 : Assigning WID=132 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 33:VU 33 : Assigning WID=232 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 33:VU 33 : Assigning WID=332 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 33:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 3: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 3:FINISHED FAILED
+Vuser 35:RUNNING
+Vuser 34:VU 34 : Assigning WID=33 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 34:VU 34 : Assigning WID=133 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 34:VU 34 : Assigning WID=233 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 34:VU 34 : Assigning WID=333 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 34:Processing 60000000 transactions with output suppressed...
+Vuser 36:RUNNING
+Vuser 35:VU 35 : Assigning WID=34 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 35:VU 35 : Assigning WID=134 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 35:VU 35 : Assigning WID=234 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 35:VU 35 : Assigning WID=334 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 35:Processing 60000000 transactions with output suppressed...
+Vuser 37:RUNNING
+Vuser 36:VU 36 : Assigning WID=35 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 36:VU 36 : Assigning WID=135 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 36:VU 36 : Assigning WID=235 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 36:VU 36 : Assigning WID=335 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 36:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 35: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 35:FINISHED FAILED
+Error in Virtual User 21: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 21:FINISHED FAILED
+Vuser 38:RUNNING
+Vuser 37:VU 37 : Assigning WID=36 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 37:VU 37 : Assigning WID=136 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 37:VU 37 : Assigning WID=236 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 37:VU 37 : Assigning WID=336 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 37:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 22: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 22:FINISHED FAILED
+Vuser 39:RUNNING
+Vuser 38:VU 38 : Assigning WID=37 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 38:VU 38 : Assigning WID=137 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 38:VU 38 : Assigning WID=237 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 38:VU 38 : Assigning WID=337 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 38:Processing 60000000 transactions with output suppressed...
+Vuser 40:RUNNING
+Vuser 39:VU 39 : Assigning WID=38 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 39:VU 39 : Assigning WID=138 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 39:VU 39 : Assigning WID=238 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 39:VU 39 : Assigning WID=338 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 39:Processing 60000000 transactions with output suppressed...
+Vuser 41:RUNNING
+Vuser 40:VU 40 : Assigning WID=39 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 40:VU 40 : Assigning WID=139 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 40:VU 40 : Assigning WID=239 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 40:VU 40 : Assigning WID=339 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 40:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 39: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 39:FINISHED FAILED
+Error in Virtual User 10: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 10:FINISHED FAILED
+Vuser 42:RUNNING
+Vuser 41:VU 41 : Assigning WID=40 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 41:VU 41 : Assigning WID=140 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 41:VU 41 : Assigning WID=240 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 41:VU 41 : Assigning WID=340 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 41:Processing 60000000 transactions with output suppressed...
+Vuser 43:RUNNING
+Vuser 42:VU 42 : Assigning WID=41 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 42:VU 42 : Assigning WID=141 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 42:VU 42 : Assigning WID=241 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 42:VU 42 : Assigning WID=341 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 42:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 24: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 24:FINISHED FAILED
+Vuser 44:RUNNING
+Vuser 43:VU 43 : Assigning WID=42 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 43:VU 43 : Assigning WID=142 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 43:VU 43 : Assigning WID=242 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 43:VU 43 : Assigning WID=342 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 43:Processing 60000000 transactions with output suppressed...
+Vuser 45:RUNNING
+Vuser 44:VU 44 : Assigning WID=43 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 44:VU 44 : Assigning WID=143 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 44:VU 44 : Assigning WID=243 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 44:VU 44 : Assigning WID=343 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 44:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 17: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 17:FINISHED FAILED
+Vuser 46:RUNNING
+Error in Virtual User 20: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 20:FINISHED FAILED
+Vuser 45:VU 45 : Assigning WID=44 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 45:VU 45 : Assigning WID=144 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 45:VU 45 : Assigning WID=244 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 45:VU 45 : Assigning WID=344 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 45:Processing 60000000 transactions with output suppressed...
+Vuser 47:RUNNING
+Vuser 46:VU 46 : Assigning WID=45 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 46:VU 46 : Assigning WID=145 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 46:VU 46 : Assigning WID=245 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 46:VU 46 : Assigning WID=345 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 46:Processing 60000000 transactions with output suppressed...
+Vuser 48:RUNNING
+Vuser 47:VU 47 : Assigning WID=46 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 47:VU 47 : Assigning WID=146 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 47:VU 47 : Assigning WID=246 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 47:VU 47 : Assigning WID=346 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 47:Processing 60000000 transactions with output suppressed...
+Vuser 49:RUNNING
+Vuser 48:VU 48 : Assigning WID=47 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 48:VU 48 : Assigning WID=147 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 48:VU 48 : Assigning WID=247 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 48:VU 48 : Assigning WID=347 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 48:Processing 60000000 transactions with output suppressed...
+Vuser 50:RUNNING
+Vuser 49:VU 49 : Assigning WID=48 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 49:VU 49 : Assigning WID=148 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 49:VU 49 : Assigning WID=248 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 49:VU 49 : Assigning WID=348 based on VU count 100, Warehouses = 400 (4 out of 4)
+Error in Virtual User 42: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 42:FINISHED FAILED
+Vuser 49:Processing 60000000 transactions with output suppressed...
+Vuser 51:RUNNING
+Error in Virtual User 43: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 43:FINISHED FAILED
+Vuser 50:VU 50 : Assigning WID=49 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 50:VU 50 : Assigning WID=149 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 50:VU 50 : Assigning WID=249 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 50:VU 50 : Assigning WID=349 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 50:Processing 60000000 transactions with output suppressed...
+Vuser 52:RUNNING
+Vuser 51:VU 51 : Assigning WID=50 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 51:VU 51 : Assigning WID=150 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 51:VU 51 : Assigning WID=250 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 51:VU 51 : Assigning WID=350 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 51:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 36: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 36:FINISHED FAILED
+Vuser 53:RUNNING
+Vuser 52:VU 52 : Assigning WID=51 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 52:VU 52 : Assigning WID=151 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 52:VU 52 : Assigning WID=251 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 52:VU 52 : Assigning WID=351 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 52:Processing 60000000 transactions with output suppressed...
+Vuser 54:RUNNING
+Vuser 53:VU 53 : Assigning WID=52 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 53:VU 53 : Assigning WID=152 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 53:VU 53 : Assigning WID=252 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 53:VU 53 : Assigning WID=352 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 53:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 50: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 50:FINISHED FAILED
+Vuser 55:RUNNING
+Error in Virtual User 29: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 29:FINISHED FAILED
+Error in Virtual User 41: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 41:FINISHED FAILED
+Error in Virtual User 18: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 18:FINISHED FAILED
+Vuser 54:VU 54 : Assigning WID=53 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 54:VU 54 : Assigning WID=153 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 54:VU 54 : Assigning WID=253 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 54:VU 54 : Assigning WID=353 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 54:Processing 60000000 transactions with output suppressed...
+Vuser 56:RUNNING
+Vuser 55:VU 55 : Assigning WID=54 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 55:VU 55 : Assigning WID=154 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 55:VU 55 : Assigning WID=254 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 55:VU 55 : Assigning WID=354 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 55:Processing 60000000 transactions with output suppressed...
+Vuser 57:RUNNING
+Error in Virtual User 34: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 34:FINISHED FAILED
+Vuser 56:VU 56 : Assigning WID=55 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 56:VU 56 : Assigning WID=155 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 56:VU 56 : Assigning WID=255 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 56:VU 56 : Assigning WID=355 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 56:Processing 60000000 transactions with output suppressed...
+Vuser 58:RUNNING
+Vuser 57:VU 57 : Assigning WID=56 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 57:VU 57 : Assigning WID=156 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 57:VU 57 : Assigning WID=256 based on VU count 100, Warehouses = 400 (3 out of 4)
+Error in Virtual User 8: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 8:FINISHED FAILED
+Vuser 57:VU 57 : Assigning WID=356 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 57:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 16: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 16:FINISHED FAILED
+Vuser 59:RUNNING
+Vuser 58:VU 58 : Assigning WID=57 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 58:VU 58 : Assigning WID=157 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 58:VU 58 : Assigning WID=257 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 58:VU 58 : Assigning WID=357 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 58:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 46: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 46:FINISHED FAILED
+Vuser 60:RUNNING
+Error in Virtual User 48: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 48:FINISHED FAILED
+Error in Virtual User 9: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 9:FINISHED FAILED
+Vuser 59:VU 59 : Assigning WID=58 based on VU count 100, Warehouses = 400 (1 out of 4)
+Error in Virtual User 5: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 5:FINISHED FAILED
+Vuser 59:VU 59 : Assigning WID=158 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 59:VU 59 : Assigning WID=258 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 59:VU 59 : Assigning WID=358 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 59:Processing 60000000 transactions with output suppressed...
+Vuser 61:RUNNING
+Vuser 60:VU 60 : Assigning WID=59 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 60:VU 60 : Assigning WID=159 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 60:VU 60 : Assigning WID=259 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 60:VU 60 : Assigning WID=359 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 60:Processing 60000000 transactions with output suppressed...
+Vuser 62:RUNNING
+Vuser 61:VU 61 : Assigning WID=60 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 61:VU 61 : Assigning WID=160 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 61:VU 61 : Assigning WID=260 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 61:VU 61 : Assigning WID=360 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 61:Processing 60000000 transactions with output suppressed...
+Vuser 63:RUNNING
+Vuser 62:VU 62 : Assigning WID=61 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 62:VU 62 : Assigning WID=161 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 62:VU 62 : Assigning WID=261 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 62:VU 62 : Assigning WID=361 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 62:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 60: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 60:FINISHED FAILED
+Vuser 64:RUNNING
+Error in Virtual User 38: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 38:FINISHED FAILED
+Error in Virtual User 53: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 53:FINISHED FAILED
+Vuser 63:VU 63 : Assigning WID=62 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 63:VU 63 : Assigning WID=162 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 63:VU 63 : Assigning WID=262 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 63:VU 63 : Assigning WID=362 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 63:Processing 60000000 transactions with output suppressed...
+Vuser 65:RUNNING
+Vuser 64:VU 64 : Assigning WID=63 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 64:VU 64 : Assigning WID=163 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 64:VU 64 : Assigning WID=263 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 64:VU 64 : Assigning WID=363 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 64:Processing 60000000 transactions with output suppressed...
+Vuser 66:RUNNING
+Vuser 65:VU 65 : Assigning WID=64 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 65:VU 65 : Assigning WID=164 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 65:VU 65 : Assigning WID=264 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 65:VU 65 : Assigning WID=364 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 65:Processing 60000000 transactions with output suppressed...
+Vuser 67:RUNNING
+Error in Virtual User 27: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 27:FINISHED FAILED
+Error in Virtual User 49: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 49:FINISHED FAILED
+Vuser 66:VU 66 : Assigning WID=65 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 66:VU 66 : Assigning WID=165 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 66:VU 66 : Assigning WID=265 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 66:VU 66 : Assigning WID=365 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 66:Processing 60000000 transactions with output suppressed...
+Vuser 68:RUNNING
+Vuser 67:VU 67 : Assigning WID=66 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 67:VU 67 : Assigning WID=166 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 67:VU 67 : Assigning WID=266 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 67:VU 67 : Assigning WID=366 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 67:Processing 60000000 transactions with output suppressed...
+Vuser 69:RUNNING
+Vuser 68:VU 68 : Assigning WID=67 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 68:VU 68 : Assigning WID=167 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 68:VU 68 : Assigning WID=267 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 68:VU 68 : Assigning WID=367 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 68:Processing 60000000 transactions with output suppressed...
+Vuser 70:RUNNING
+Vuser 69:VU 69 : Assigning WID=68 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 69:VU 69 : Assigning WID=168 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 69:VU 69 : Assigning WID=268 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 69:VU 69 : Assigning WID=368 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 69:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 59: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 59:FINISHED FAILED
+Vuser 71:RUNNING
+Vuser 70:VU 70 : Assigning WID=69 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 70:VU 70 : Assigning WID=169 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 70:VU 70 : Assigning WID=269 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 70:VU 70 : Assigning WID=369 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 70:Processing 60000000 transactions with output suppressed...
+Vuser 72:RUNNING
+Vuser 71:VU 71 : Assigning WID=70 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 71:VU 71 : Assigning WID=170 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 71:VU 71 : Assigning WID=270 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 71:VU 71 : Assigning WID=370 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 71:Processing 60000000 transactions with output suppressed...
+Vuser 73:RUNNING
+Vuser 72:VU 72 : Assigning WID=71 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 72:VU 72 : Assigning WID=171 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 72:VU 72 : Assigning WID=271 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 72:VU 72 : Assigning WID=371 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 72:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 47: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 47:FINISHED FAILED
+Error in Virtual User 15: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 15:FINISHED FAILED
+Error in Virtual User 62: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 62:FINISHED FAILED
+Error in Virtual User 31: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 31:FINISHED FAILED
+Error in Virtual User 65: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 65:FINISHED FAILED
+Vuser 74:RUNNING
+Error in Virtual User 57: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 57:FINISHED FAILED
+Error in Virtual User 33: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 33:FINISHED FAILED
+Error in Virtual User 28: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 28:FINISHED FAILED
+Vuser 73:VU 73 : Assigning WID=72 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 73:VU 73 : Assigning WID=172 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 73:VU 73 : Assigning WID=272 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 73:VU 73 : Assigning WID=372 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 73:Processing 60000000 transactions with output suppressed...
+Vuser 75:RUNNING
+Vuser 74:VU 74 : Assigning WID=73 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 74:VU 74 : Assigning WID=173 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 74:VU 74 : Assigning WID=273 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 74:VU 74 : Assigning WID=373 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 74:Processing 60000000 transactions with output suppressed...
+Vuser 76:RUNNING
+Vuser 75:VU 75 : Assigning WID=74 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 75:VU 75 : Assigning WID=174 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 75:VU 75 : Assigning WID=274 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 75:VU 75 : Assigning WID=374 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 75:Processing 60000000 transactions with output suppressed...
+Vuser 77:RUNNING
+Vuser 76:VU 76 : Assigning WID=75 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 76:VU 76 : Assigning WID=175 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 76:VU 76 : Assigning WID=275 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 76:VU 76 : Assigning WID=375 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 76:Processing 60000000 transactions with output suppressed...
+Vuser 78:RUNNING
+Vuser 77:VU 77 : Assigning WID=76 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 77:VU 77 : Assigning WID=176 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 77:VU 77 : Assigning WID=276 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 77:VU 77 : Assigning WID=376 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 77:Processing 60000000 transactions with output suppressed...
+Vuser 79:RUNNING
+Vuser 78:VU 78 : Assigning WID=77 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 78:VU 78 : Assigning WID=177 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 78:VU 78 : Assigning WID=277 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 78:VU 78 : Assigning WID=377 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 78:Processing 60000000 transactions with output suppressed...
+Vuser 80:RUNNING
+Vuser 79:VU 79 : Assigning WID=78 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 79:VU 79 : Assigning WID=178 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 79:VU 79 : Assigning WID=278 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 79:VU 79 : Assigning WID=378 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 79:Processing 60000000 transactions with output suppressed...
+Vuser 81:RUNNING
+Error in Virtual User 55: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 55:FINISHED FAILED
+Vuser 80:VU 80 : Assigning WID=79 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 80:VU 80 : Assigning WID=179 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 80:VU 80 : Assigning WID=279 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 80:VU 80 : Assigning WID=379 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 80:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 71: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 71:FINISHED FAILED
+Error in Virtual User 76: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 76:FINISHED FAILED
+Error in Virtual User 78: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 78:FINISHED FAILED
+Error in Virtual User 40: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 40:FINISHED FAILED
+Error in Virtual User 73: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 73:FINISHED FAILED
+Error in Virtual User 61: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 61:FINISHED FAILED
+Error in Virtual User 74: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 74:FINISHED FAILED
+Error in Virtual User 69: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 69:FINISHED FAILED
+Vuser 82:RUNNING
+Vuser 81:VU 81 : Assigning WID=80 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 81:VU 81 : Assigning WID=180 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 81:VU 81 : Assigning WID=280 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 81:VU 81 : Assigning WID=380 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 81:Processing 60000000 transactions with output suppressed...
+Vuser 83:RUNNING
+Error in Virtual User 58: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 58:FINISHED FAILED
+Error in Virtual User 52: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 52:FINISHED FAILED
+Vuser 82:VU 82 : Assigning WID=81 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 82:VU 82 : Assigning WID=181 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 82:VU 82 : Assigning WID=281 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 82:VU 82 : Assigning WID=381 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 82:Processing 60000000 transactions with output suppressed...
+Vuser 84:RUNNING
+Vuser 83:VU 83 : Assigning WID=82 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 83:VU 83 : Assigning WID=182 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 83:VU 83 : Assigning WID=282 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 83:VU 83 : Assigning WID=382 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 83:Processing 60000000 transactions with output suppressed...
+Vuser 85:RUNNING
+Vuser 84:VU 84 : Assigning WID=83 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 84:VU 84 : Assigning WID=183 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 84:VU 84 : Assigning WID=283 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 84:VU 84 : Assigning WID=383 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 84:Processing 60000000 transactions with output suppressed...
+Vuser 86:RUNNING
+Vuser 85:VU 85 : Assigning WID=84 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 85:VU 85 : Assigning WID=184 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 85:VU 85 : Assigning WID=284 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 85:VU 85 : Assigning WID=384 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 85:Processing 60000000 transactions with output suppressed...
+Vuser 87:RUNNING
+Vuser 86:VU 86 : Assigning WID=85 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 86:VU 86 : Assigning WID=185 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 86:VU 86 : Assigning WID=285 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 86:VU 86 : Assigning WID=385 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 86:Processing 60000000 transactions with output suppressed...
+Vuser 88:RUNNING
+Vuser 87:VU 87 : Assigning WID=86 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 87:VU 87 : Assigning WID=186 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 87:VU 87 : Assigning WID=286 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 87:VU 87 : Assigning WID=386 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 87:Processing 60000000 transactions with output suppressed...
+Vuser 89:RUNNING
+Vuser 88:VU 88 : Assigning WID=87 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 88:VU 88 : Assigning WID=187 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 88:VU 88 : Assigning WID=287 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 88:VU 88 : Assigning WID=387 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 88:Processing 60000000 transactions with output suppressed...
+Vuser 90:RUNNING
+Vuser 89:VU 89 : Assigning WID=88 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 89:VU 89 : Assigning WID=188 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 89:VU 89 : Assigning WID=288 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 89:VU 89 : Assigning WID=388 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 89:Processing 60000000 transactions with output suppressed...
+Vuser 91:RUNNING
+Vuser 90:VU 90 : Assigning WID=89 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 90:VU 90 : Assigning WID=189 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 90:VU 90 : Assigning WID=289 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 90:VU 90 : Assigning WID=389 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 90:Processing 60000000 transactions with output suppressed...
+Vuser 92:RUNNING
+Vuser 91:VU 91 : Assigning WID=90 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 91:VU 91 : Assigning WID=190 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 91:VU 91 : Assigning WID=290 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 91:VU 91 : Assigning WID=390 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 91:Processing 60000000 transactions with output suppressed...
+Vuser 93:RUNNING
+Error in Virtual User 23: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 23:FINISHED FAILED
+Vuser 92:VU 92 : Assigning WID=91 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 92:VU 92 : Assigning WID=191 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 92:VU 92 : Assigning WID=291 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 92:VU 92 : Assigning WID=391 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 92:Processing 60000000 transactions with output suppressed...
+Vuser 94:RUNNING
+Error in Virtual User 67: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 67:FINISHED FAILED
+Vuser 93:VU 93 : Assigning WID=92 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 93:VU 93 : Assigning WID=192 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 93:VU 93 : Assigning WID=292 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 93:VU 93 : Assigning WID=392 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 93:Processing 60000000 transactions with output suppressed...
+Vuser 95:RUNNING
+Vuser 94:VU 94 : Assigning WID=93 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 94:VU 94 : Assigning WID=193 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 94:VU 94 : Assigning WID=293 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 94:VU 94 : Assigning WID=393 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 94:Processing 60000000 transactions with output suppressed...
+Vuser 96:RUNNING
+Vuser 95:VU 95 : Assigning WID=94 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 95:VU 95 : Assigning WID=194 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 95:VU 95 : Assigning WID=294 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 95:VU 95 : Assigning WID=394 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 95:Processing 60000000 transactions with output suppressed...
+Vuser 97:RUNNING
+Error in Virtual User 68: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 68:FINISHED FAILED
+Vuser 96:VU 96 : Assigning WID=95 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 96:VU 96 : Assigning WID=195 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 96:VU 96 : Assigning WID=295 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 96:VU 96 : Assigning WID=395 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 96:Processing 60000000 transactions with output suppressed...
+Vuser 98:RUNNING
+Error in Virtual User 56: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 56:FINISHED FAILED
+Error in Virtual User 66: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 66:FINISHED FAILED
+Vuser 97:VU 97 : Assigning WID=96 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 97:VU 97 : Assigning WID=196 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 97:VU 97 : Assigning WID=296 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 97:VU 97 : Assigning WID=396 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 97:Processing 60000000 transactions with output suppressed...
+Vuser 99:RUNNING
+Vuser 98:VU 98 : Assigning WID=97 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 98:VU 98 : Assigning WID=197 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 98:VU 98 : Assigning WID=297 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 98:VU 98 : Assigning WID=397 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 98:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 44: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 44:FINISHED FAILED
+Vuser 100:RUNNING
+Error in Virtual User 93: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 93:FINISHED FAILED
+Vuser 99:VU 99 : Assigning WID=98 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 99:VU 99 : Assigning WID=198 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 99:VU 99 : Assigning WID=298 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 99:VU 99 : Assigning WID=398 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 99:Processing 60000000 transactions with output suppressed...
+Vuser 101:RUNNING
+Vuser 100:VU 100 : Assigning WID=99 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 100:VU 100 : Assigning WID=199 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 100:VU 100 : Assigning WID=299 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 100:VU 100 : Assigning WID=399 based on VU count 100, Warehouses = 400 (4 out of 4)
+Error in Virtual User 97: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 97:FINISHED FAILED
+Vuser 100:Processing 60000000 transactions with output suppressed...
+Vuser 101:VU 101 : Assigning WID=100 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 101:VU 101 : Assigning WID=200 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 101:VU 101 : Assigning WID=300 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 101:VU 101 : Assigning WID=400 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 101:Processing 60000000 transactions with output suppressed...
+Error in Virtual User 90: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 90:FINISHED FAILED
+Error in Virtual User 72: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 72:FINISHED FAILED
+Error in Virtual User 91: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 91:FINISHED FAILED
+Error in Virtual User 77: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 77:FINISHED FAILED
+Error in Virtual User 92: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 92:FINISHED FAILED
+Error in Virtual User 32: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 32:FINISHED FAILED
+Error in Virtual User 83: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 83:FINISHED FAILED
+Error in Virtual User 45: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 45:FINISHED FAILED
+Error in Virtual User 80: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 80:FINISHED FAILED
+Vuser 1:Rampup 1 minutes complete ...
+Error in Virtual User 100: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 100:FINISHED FAILED
+Error in Virtual User 87: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on identification as a pivot, during commit attempt.
+HINT:  The transaction might succeed if retried.
+
+Vuser 87:FINISHED FAILED
+Vuser 1:Rampup 2 minutes complete ...
+Vuser 1:Rampup complete, Taking start Transaction Count.
+Vuser 1:Timing test period of 30 in minutes
+Error in Virtual User 79: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function delivery(integer,integer) line 66 at ROLLBACK
+
+Vuser 79:FINISHED FAILED
+Vuser 1:1 ...,
+Vuser 1:2 ...,
+Error in Virtual User 81: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 81:FINISHED FAILED
+Error in Virtual User 94: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 94:FINISHED FAILED
+Error in Virtual User 51: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 51:FINISHED FAILED
+Error in Virtual User 85: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 85:FINISHED FAILED
+Error in Virtual User 99: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 99:FINISHED FAILED
+Error in Virtual User 54: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 54:FINISHED FAILED
+Error in Virtual User 95: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 95:FINISHED FAILED
+Error in Virtual User 70: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 70:FINISHED FAILED
+Error in Virtual User 101: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 101:FINISHED FAILED
+Error in Virtual User 37: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 37:FINISHED FAILED
+Error in Virtual User 75: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 75:FINISHED FAILED
+Error in Virtual User 63: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 63:FINISHED FAILED
+Error in Virtual User 98: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 98:FINISHED FAILED
+Error in Virtual User 96: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 96:FINISHED FAILED
+Error in Virtual User 86: ERROR:  could not serialize access due to read/write dependencies among transactions
+DETAIL:  Reason code: Canceled on commit attempt with conflict in from prepared pivot.
+HINT:  The transaction might succeed if retried.
+
+Vuser 86:FINISHED FAILED
+Error in Virtual User 82: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 82:FINISHED FAILED
+Error in Virtual User 89: ERROR:  invalid transaction termination
+CONTEXT:  PL/pgSQL function neword(integer,integer,integer,integer,integer,integer) line 248 at ROLLBACK
+
+Vuser 89:FINISHED FAILED
+Vuser 1:3 ...,
+Vuser 1:4 ...,
+Vuser 1:5 ...,
+Vuser 1:6 ...,
+Vuser 1:7 ...,
+Vuser 1:8 ...,
+Vuser 1:9 ...,
+Vuser 1:10 ...,
+Vuser 1:11 ...,
+Vuser 1:12 ...,
+Vuser 1:13 ...,
+Vuser 1:14 ...,
+Vuser 1:15 ...,
+Vuser 1:16 ...,
+Vuser 1:17 ...,
+Vuser 1:18 ...,
+Vuser 1:19 ...,
+Vuser 1:20 ...,
+Vuser 1:21 ...,
+Vuser 1:22 ...,
+Vuser 1:23 ...,
+Vuser 1:24 ...,
+Vuser 1:25 ...,
+Vuser 1:26 ...,
+Vuser 1:27 ...,
+Vuser 1:28 ...,
+Vuser 1:29 ...,
+Vuser 1:30 ...,
+Vuser 1:Test complete, Taking end Transaction Count.
+Vuser 1:100 Active Virtual Users configured
+Vuser 1:TEST RESULT : System achieved 2891 NOPM from 6888 PostgreSQL TPM
+Vuser 1:FINISHED SUCCESS
+Vuser 19:FINISHED SUCCESS
+Vuser 64:FINISHED SUCCESS
+Vuser 26:FINISHED SUCCESS
+Vuser 84:FINISHED SUCCESS
+Vuser 88:FINISHED SUCCESS
+ALL VIRTUAL USERS COMPLETE
+jobid=644325C75F9E03E273135333

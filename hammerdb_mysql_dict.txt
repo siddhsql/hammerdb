@@ -1,0 +1,38 @@
+hammerdb>print dict
+Dictionary Settings for MySQL
+connection {
+ mysql_host               = x.x.x.x
+ mysql_port               = 3306
+ mysql_socket             = /tmp/mysql.sock
+ mysql_ssl                = false
+ mysql_ssl_two_way        = false
+ mysql_ssl_linux_capath   = /etc/mysql/certs
+ mysql_ssl_windows_capath = C:\mysql\certs
+ mysql_ssl_ca             = ca-cert.pem
+ mysql_ssl_cert           = client-cert.pem
+ mysql_ssl_key            = client-key.pem
+ mysql_ssl_cipher         = server
+}
+tpcc       {
+ mysql_count_ware       = 400
+ mysql_num_vu           = 100
+ mysql_user             = hammerdb
+ mysql_pass             = xxx
+ mysql_dbase            = hammerdb
+ mysql_storage_engine   = innodb
+ mysql_partition        = false
+ mysql_prepared         = false
+ mysql_total_iterations = 60000000
+ mysql_raiseerror       = false
+ mysql_keyandthink      = false
+ mysql_driver           = timed
+ mysql_rampup           = 2
+ mysql_duration         = 30
+ mysql_allwarehouse     = true
+ mysql_timeprofile      = false
+ mysql_async_scale      = false
+ mysql_async_client     = 1
+ mysql_async_verbose    = false
+ mysql_async_delay      = 1000
+ mysql_connect_pool     = false
+}

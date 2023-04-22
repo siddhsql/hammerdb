@@ -1,0 +1,844 @@
+hammerdb>vurun
+Vuser 1:RUNNING
+Vuser 1:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 1:Beginning rampup time of 2 minutes
+Vuser 2:RUNNING
+Vuser 2:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 2:VU 2 : Assigning WID=1 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 2:VU 2 : Assigning WID=101 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 2:VU 2 : Assigning WID=201 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 2:VU 2 : Assigning WID=301 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 3:RUNNING
+Vuser 2:Processing 60000000 transactions with output suppressed...
+Vuser 3:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 3:VU 3 : Assigning WID=2 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 3:VU 3 : Assigning WID=102 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 3:VU 3 : Assigning WID=202 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 3:VU 3 : Assigning WID=302 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 3:Processing 60000000 transactions with output suppressed...
+Vuser 4:RUNNING
+Vuser 4:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 4:VU 4 : Assigning WID=3 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 4:VU 4 : Assigning WID=103 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 4:VU 4 : Assigning WID=203 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 4:VU 4 : Assigning WID=303 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 4:Processing 60000000 transactions with output suppressed...
+Vuser 5:RUNNING
+Vuser 5:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 5:VU 5 : Assigning WID=4 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 5:VU 5 : Assigning WID=104 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 5:VU 5 : Assigning WID=204 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 5:VU 5 : Assigning WID=304 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 5:Processing 60000000 transactions with output suppressed...
+Vuser 6:RUNNING
+Vuser 6:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 6:VU 6 : Assigning WID=5 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 6:VU 6 : Assigning WID=105 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 6:VU 6 : Assigning WID=205 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 6:VU 6 : Assigning WID=305 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 6:Processing 60000000 transactions with output suppressed...
+Vuser 7:RUNNING
+Vuser 7:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 7:VU 7 : Assigning WID=6 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 7:VU 7 : Assigning WID=106 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 7:VU 7 : Assigning WID=206 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 7:VU 7 : Assigning WID=306 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 7:Processing 60000000 transactions with output suppressed...
+Vuser 8:RUNNING
+Vuser 8:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 8:VU 8 : Assigning WID=7 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 8:VU 8 : Assigning WID=107 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 8:VU 8 : Assigning WID=207 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 8:VU 8 : Assigning WID=307 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 8:Processing 60000000 transactions with output suppressed...
+Vuser 9:RUNNING
+Vuser 9:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 9:VU 9 : Assigning WID=8 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 9:VU 9 : Assigning WID=108 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 9:VU 9 : Assigning WID=208 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 9:VU 9 : Assigning WID=308 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 9:Processing 60000000 transactions with output suppressed...
+Vuser 10:RUNNING
+Vuser 10:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 10:VU 10 : Assigning WID=9 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 10:VU 10 : Assigning WID=109 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 10:VU 10 : Assigning WID=209 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 10:VU 10 : Assigning WID=309 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 10:Processing 60000000 transactions with output suppressed...
+Vuser 11:RUNNING
+Vuser 11:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 12:RUNNING
+Vuser 11:VU 11 : Assigning WID=10 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 11:VU 11 : Assigning WID=110 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 11:VU 11 : Assigning WID=210 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 11:VU 11 : Assigning WID=310 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 11:Processing 60000000 transactions with output suppressed...
+Vuser 12:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 12:VU 12 : Assigning WID=11 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 12:VU 12 : Assigning WID=111 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 12:VU 12 : Assigning WID=211 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 12:VU 12 : Assigning WID=311 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 12:Processing 60000000 transactions with output suppressed...
+Vuser 13:RUNNING
+Vuser 13:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 13:VU 13 : Assigning WID=12 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 13:VU 13 : Assigning WID=112 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 13:VU 13 : Assigning WID=212 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 13:VU 13 : Assigning WID=312 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 13:Processing 60000000 transactions with output suppressed...
+Vuser 14:RUNNING
+Vuser 14:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 14:VU 14 : Assigning WID=13 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 14:VU 14 : Assigning WID=113 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 14:VU 14 : Assigning WID=213 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 14:VU 14 : Assigning WID=313 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 14:Processing 60000000 transactions with output suppressed...
+Vuser 15:RUNNING
+Vuser 15:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 15:VU 15 : Assigning WID=14 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 15:VU 15 : Assigning WID=114 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 15:VU 15 : Assigning WID=214 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 15:VU 15 : Assigning WID=314 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 16:RUNNING
+Vuser 15:Processing 60000000 transactions with output suppressed...
+Vuser 16:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 16:VU 16 : Assigning WID=15 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 16:VU 16 : Assigning WID=115 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 16:VU 16 : Assigning WID=215 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 16:VU 16 : Assigning WID=315 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 17:RUNNING
+Vuser 16:Processing 60000000 transactions with output suppressed...
+Vuser 17:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 17:VU 17 : Assigning WID=16 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 17:VU 17 : Assigning WID=116 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 17:VU 17 : Assigning WID=216 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 17:VU 17 : Assigning WID=316 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 18:RUNNING
+Vuser 17:Processing 60000000 transactions with output suppressed...
+Vuser 18:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 18:VU 18 : Assigning WID=17 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 18:VU 18 : Assigning WID=117 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 18:VU 18 : Assigning WID=217 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 18:VU 18 : Assigning WID=317 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 18:Processing 60000000 transactions with output suppressed...
+Vuser 19:RUNNING
+Vuser 19:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 19:VU 19 : Assigning WID=18 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 19:VU 19 : Assigning WID=118 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 19:VU 19 : Assigning WID=218 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 19:VU 19 : Assigning WID=318 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 20:RUNNING
+Vuser 19:Processing 60000000 transactions with output suppressed...
+Vuser 20:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 20:VU 20 : Assigning WID=19 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 20:VU 20 : Assigning WID=119 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 20:VU 20 : Assigning WID=219 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 20:VU 20 : Assigning WID=319 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 20:Processing 60000000 transactions with output suppressed...
+Vuser 21:RUNNING
+Vuser 21:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 21:VU 21 : Assigning WID=20 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 21:VU 21 : Assigning WID=120 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 21:VU 21 : Assigning WID=220 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 21:VU 21 : Assigning WID=320 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 22:RUNNING
+Vuser 21:Processing 60000000 transactions with output suppressed...
+Vuser 22:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 22:VU 22 : Assigning WID=21 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 22:VU 22 : Assigning WID=121 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 22:VU 22 : Assigning WID=221 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 22:VU 22 : Assigning WID=321 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 22:Processing 60000000 transactions with output suppressed...
+Vuser 23:RUNNING
+Vuser 23:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 23:VU 23 : Assigning WID=22 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 23:VU 23 : Assigning WID=122 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 23:VU 23 : Assigning WID=222 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 23:VU 23 : Assigning WID=322 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 24:RUNNING
+Vuser 23:Processing 60000000 transactions with output suppressed...
+Vuser 24:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 24:VU 24 : Assigning WID=23 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 24:VU 24 : Assigning WID=123 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 24:VU 24 : Assigning WID=223 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 24:VU 24 : Assigning WID=323 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 24:Processing 60000000 transactions with output suppressed...
+Vuser 25:RUNNING
+Vuser 25:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 25:VU 25 : Assigning WID=24 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 25:VU 25 : Assigning WID=124 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 25:VU 25 : Assigning WID=224 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 25:VU 25 : Assigning WID=324 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 26:RUNNING
+Vuser 25:Processing 60000000 transactions with output suppressed...
+Vuser 26:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 26:VU 26 : Assigning WID=25 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 26:VU 26 : Assigning WID=125 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 26:VU 26 : Assigning WID=225 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 26:VU 26 : Assigning WID=325 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 27:RUNNING
+Vuser 26:Processing 60000000 transactions with output suppressed...
+Vuser 27:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 27:VU 27 : Assigning WID=26 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 27:VU 27 : Assigning WID=126 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 27:VU 27 : Assigning WID=226 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 27:VU 27 : Assigning WID=326 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 28:RUNNING
+Vuser 27:Processing 60000000 transactions with output suppressed...
+Vuser 28:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 28:VU 28 : Assigning WID=27 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 28:VU 28 : Assigning WID=127 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 28:VU 28 : Assigning WID=227 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 28:VU 28 : Assigning WID=327 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 29:RUNNING
+Vuser 28:Processing 60000000 transactions with output suppressed...
+Vuser 29:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 29:VU 29 : Assigning WID=28 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 29:VU 29 : Assigning WID=128 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 29:VU 29 : Assigning WID=228 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 29:VU 29 : Assigning WID=328 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 29:Processing 60000000 transactions with output suppressed...
+Vuser 30:RUNNING
+Vuser 30:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 30:VU 30 : Assigning WID=29 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 30:VU 30 : Assigning WID=129 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 30:VU 30 : Assigning WID=229 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 30:VU 30 : Assigning WID=329 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 31:RUNNING
+Vuser 30:Processing 60000000 transactions with output suppressed...
+Vuser 31:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 31:VU 31 : Assigning WID=30 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 31:VU 31 : Assigning WID=130 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 31:VU 31 : Assigning WID=230 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 31:VU 31 : Assigning WID=330 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 32:RUNNING
+Vuser 31:Processing 60000000 transactions with output suppressed...
+Vuser 32:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 32:VU 32 : Assigning WID=31 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 32:VU 32 : Assigning WID=131 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 32:VU 32 : Assigning WID=231 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 32:VU 32 : Assigning WID=331 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 33:RUNNING
+Vuser 32:Processing 60000000 transactions with output suppressed...
+Vuser 33:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 33:VU 33 : Assigning WID=32 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 33:VU 33 : Assigning WID=132 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 33:VU 33 : Assigning WID=232 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 33:VU 33 : Assigning WID=332 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 34:RUNNING
+Vuser 33:Processing 60000000 transactions with output suppressed...
+Vuser 34:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 34:VU 34 : Assigning WID=33 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 34:VU 34 : Assigning WID=133 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 34:VU 34 : Assigning WID=233 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 34:VU 34 : Assigning WID=333 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 35:RUNNING
+Vuser 34:Processing 60000000 transactions with output suppressed...
+Vuser 35:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 35:VU 35 : Assigning WID=34 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 35:VU 35 : Assigning WID=134 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 35:VU 35 : Assigning WID=234 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 35:VU 35 : Assigning WID=334 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 36:RUNNING
+Vuser 35:Processing 60000000 transactions with output suppressed...
+Vuser 36:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 36:VU 36 : Assigning WID=35 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 36:VU 36 : Assigning WID=135 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 36:VU 36 : Assigning WID=235 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 36:VU 36 : Assigning WID=335 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 37:RUNNING
+Vuser 36:Processing 60000000 transactions with output suppressed...
+Vuser 37:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 37:VU 37 : Assigning WID=36 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 37:VU 37 : Assigning WID=136 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 37:VU 37 : Assigning WID=236 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 37:VU 37 : Assigning WID=336 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 38:RUNNING
+Vuser 37:Processing 60000000 transactions with output suppressed...
+Vuser 38:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 38:VU 38 : Assigning WID=37 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 38:VU 38 : Assigning WID=137 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 38:VU 38 : Assigning WID=237 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 38:VU 38 : Assigning WID=337 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 39:RUNNING
+Vuser 38:Processing 60000000 transactions with output suppressed...
+Vuser 39:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 39:VU 39 : Assigning WID=38 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 39:VU 39 : Assigning WID=138 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 39:VU 39 : Assigning WID=238 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 39:VU 39 : Assigning WID=338 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 40:RUNNING
+Vuser 39:Processing 60000000 transactions with output suppressed...
+Vuser 40:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 40:VU 40 : Assigning WID=39 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 40:VU 40 : Assigning WID=139 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 40:VU 40 : Assigning WID=239 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 40:VU 40 : Assigning WID=339 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 41:RUNNING
+Vuser 40:Processing 60000000 transactions with output suppressed...
+Vuser 41:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 41:VU 41 : Assigning WID=40 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 41:VU 41 : Assigning WID=140 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 41:VU 41 : Assigning WID=240 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 41:VU 41 : Assigning WID=340 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 42:RUNNING
+Vuser 41:Processing 60000000 transactions with output suppressed...
+Vuser 42:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 42:VU 42 : Assigning WID=41 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 42:VU 42 : Assigning WID=141 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 42:VU 42 : Assigning WID=241 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 42:VU 42 : Assigning WID=341 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 42:Processing 60000000 transactions with output suppressed...
+Vuser 43:RUNNING
+Vuser 43:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 43:VU 43 : Assigning WID=42 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 43:VU 43 : Assigning WID=142 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 43:VU 43 : Assigning WID=242 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 43:VU 43 : Assigning WID=342 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 44:RUNNING
+Vuser 43:Processing 60000000 transactions with output suppressed...
+Vuser 44:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 44:VU 44 : Assigning WID=43 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 44:VU 44 : Assigning WID=143 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 44:VU 44 : Assigning WID=243 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 44:VU 44 : Assigning WID=343 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 45:RUNNING
+Vuser 44:Processing 60000000 transactions with output suppressed...
+Vuser 45:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 45:VU 45 : Assigning WID=44 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 45:VU 45 : Assigning WID=144 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 45:VU 45 : Assigning WID=244 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 45:VU 45 : Assigning WID=344 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 46:RUNNING
+Vuser 45:Processing 60000000 transactions with output suppressed...
+Vuser 46:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 46:VU 46 : Assigning WID=45 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 46:VU 46 : Assigning WID=145 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 46:VU 46 : Assigning WID=245 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 46:VU 46 : Assigning WID=345 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 47:RUNNING
+Vuser 47:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 47:VU 47 : Assigning WID=46 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 47:VU 47 : Assigning WID=146 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 47:VU 47 : Assigning WID=246 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 47:VU 47 : Assigning WID=346 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 48:RUNNING
+Vuser 46:Processing 60000000 transactions with output suppressed...
+Vuser 48:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 48:VU 48 : Assigning WID=47 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 48:VU 48 : Assigning WID=147 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 48:VU 48 : Assigning WID=247 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 48:VU 48 : Assigning WID=347 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 49:RUNNING
+Vuser 47:Processing 60000000 transactions with output suppressed...
+Vuser 48:Processing 60000000 transactions with output suppressed...
+Vuser 49:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 49:VU 49 : Assigning WID=48 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 49:VU 49 : Assigning WID=148 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 49:VU 49 : Assigning WID=248 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 49:VU 49 : Assigning WID=348 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 50:RUNNING
+Vuser 49:Processing 60000000 transactions with output suppressed...
+Vuser 50:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 50:VU 50 : Assigning WID=49 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 50:VU 50 : Assigning WID=149 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 50:VU 50 : Assigning WID=249 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 50:VU 50 : Assigning WID=349 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 51:RUNNING
+Vuser 50:Processing 60000000 transactions with output suppressed...
+Vuser 51:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 51:VU 51 : Assigning WID=50 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 51:VU 51 : Assigning WID=150 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 51:VU 51 : Assigning WID=250 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 51:VU 51 : Assigning WID=350 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 52:RUNNING
+Vuser 51:Processing 60000000 transactions with output suppressed...
+Vuser 52:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 52:VU 52 : Assigning WID=51 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 52:VU 52 : Assigning WID=151 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 52:VU 52 : Assigning WID=251 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 52:VU 52 : Assigning WID=351 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 53:RUNNING
+Vuser 52:Processing 60000000 transactions with output suppressed...
+Vuser 53:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 53:VU 53 : Assigning WID=52 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 53:VU 53 : Assigning WID=152 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 53:VU 53 : Assigning WID=252 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 53:VU 53 : Assigning WID=352 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 54:RUNNING
+Vuser 54:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 54:VU 54 : Assigning WID=53 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 54:VU 54 : Assigning WID=153 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 54:VU 54 : Assigning WID=253 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 54:VU 54 : Assigning WID=353 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 55:RUNNING
+Vuser 53:Processing 60000000 transactions with output suppressed...
+Vuser 55:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 55:VU 55 : Assigning WID=54 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 55:VU 55 : Assigning WID=154 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 55:VU 55 : Assigning WID=254 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 55:VU 55 : Assigning WID=354 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 56:RUNNING
+Vuser 54:Processing 60000000 transactions with output suppressed...
+Vuser 56:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 56:VU 56 : Assigning WID=55 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 56:VU 56 : Assigning WID=155 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 56:VU 56 : Assigning WID=255 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 56:VU 56 : Assigning WID=355 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 57:RUNNING
+Vuser 55:Processing 60000000 transactions with output suppressed...
+Vuser 57:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 57:VU 57 : Assigning WID=56 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 57:VU 57 : Assigning WID=156 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 57:VU 57 : Assigning WID=256 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 57:VU 57 : Assigning WID=356 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 58:RUNNING
+Vuser 57:Processing 60000000 transactions with output suppressed...
+Vuser 56:Processing 60000000 transactions with output suppressed...
+Vuser 58:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 58:VU 58 : Assigning WID=57 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 58:VU 58 : Assigning WID=157 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 58:VU 58 : Assigning WID=257 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 58:VU 58 : Assigning WID=357 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 59:RUNNING
+Vuser 59:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 59:VU 59 : Assigning WID=58 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 59:VU 59 : Assigning WID=158 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 59:VU 59 : Assigning WID=258 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 59:VU 59 : Assigning WID=358 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 60:RUNNING
+Vuser 58:Processing 60000000 transactions with output suppressed...
+Vuser 60:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 60:VU 60 : Assigning WID=59 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 60:VU 60 : Assigning WID=159 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 60:VU 60 : Assigning WID=259 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 60:VU 60 : Assigning WID=359 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 61:RUNNING
+Vuser 59:Processing 60000000 transactions with output suppressed...
+Vuser 61:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 61:VU 61 : Assigning WID=60 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 61:VU 61 : Assigning WID=160 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 61:VU 61 : Assigning WID=260 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 61:VU 61 : Assigning WID=360 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 60:Processing 60000000 transactions with output suppressed...
+Vuser 62:RUNNING
+Vuser 62:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 62:VU 62 : Assigning WID=61 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 62:VU 62 : Assigning WID=161 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 61:Processing 60000000 transactions with output suppressed...
+Vuser 62:VU 62 : Assigning WID=261 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 62:VU 62 : Assigning WID=361 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 63:RUNNING
+Vuser 63:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 63:VU 63 : Assigning WID=62 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 63:VU 63 : Assigning WID=162 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 63:VU 63 : Assigning WID=262 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 63:VU 63 : Assigning WID=362 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 64:RUNNING
+Vuser 64:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 62:Processing 60000000 transactions with output suppressed...
+Vuser 64:VU 64 : Assigning WID=63 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 64:VU 64 : Assigning WID=163 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 64:VU 64 : Assigning WID=263 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 64:VU 64 : Assigning WID=363 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 65:RUNNING
+Vuser 65:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 65:VU 65 : Assigning WID=64 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 65:VU 65 : Assigning WID=164 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 63:Processing 60000000 transactions with output suppressed...
+Vuser 65:VU 65 : Assigning WID=264 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 65:VU 65 : Assigning WID=364 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 66:RUNNING
+Vuser 66:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 66:VU 66 : Assigning WID=65 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 66:VU 66 : Assigning WID=165 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 66:VU 66 : Assigning WID=265 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 66:VU 66 : Assigning WID=365 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 67:RUNNING
+Vuser 67:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 67:VU 67 : Assigning WID=66 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 67:VU 67 : Assigning WID=166 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 67:VU 67 : Assigning WID=266 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 67:VU 67 : Assigning WID=366 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 68:RUNNING
+Vuser 68:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 68:VU 68 : Assigning WID=67 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 68:VU 68 : Assigning WID=167 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 68:VU 68 : Assigning WID=267 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 68:VU 68 : Assigning WID=367 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 69:RUNNING
+Vuser 66:Processing 60000000 transactions with output suppressed...
+Vuser 65:Processing 60000000 transactions with output suppressed...
+Vuser 64:Processing 60000000 transactions with output suppressed...
+Vuser 69:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 69:VU 69 : Assigning WID=68 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 69:VU 69 : Assigning WID=168 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 69:VU 69 : Assigning WID=268 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 69:VU 69 : Assigning WID=368 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 70:RUNNING
+Vuser 70:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 70:VU 70 : Assigning WID=69 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 70:VU 70 : Assigning WID=169 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 70:VU 70 : Assigning WID=269 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 70:VU 70 : Assigning WID=369 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 71:RUNNING
+Vuser 67:Processing 60000000 transactions with output suppressed...
+Vuser 71:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 71:VU 71 : Assigning WID=70 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 71:VU 71 : Assigning WID=170 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 71:VU 71 : Assigning WID=270 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 71:VU 71 : Assigning WID=370 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 72:RUNNING
+Vuser 72:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 72:VU 72 : Assigning WID=71 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 72:VU 72 : Assigning WID=171 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 72:VU 72 : Assigning WID=271 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 72:VU 72 : Assigning WID=371 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 73:RUNNING
+Vuser 73:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 73:VU 73 : Assigning WID=72 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 73:VU 73 : Assigning WID=172 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 73:VU 73 : Assigning WID=272 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 73:VU 73 : Assigning WID=372 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 74:RUNNING
+Vuser 68:Processing 60000000 transactions with output suppressed...
+Vuser 70:Processing 60000000 transactions with output suppressed...
+Vuser 69:Processing 60000000 transactions with output suppressed...
+Vuser 74:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 74:VU 74 : Assigning WID=73 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 74:VU 74 : Assigning WID=173 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 74:VU 74 : Assigning WID=273 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 74:VU 74 : Assigning WID=373 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 75:RUNNING
+Vuser 75:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 75:VU 75 : Assigning WID=74 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 75:VU 75 : Assigning WID=174 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 75:VU 75 : Assigning WID=274 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 75:VU 75 : Assigning WID=374 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 76:RUNNING
+Vuser 71:Processing 60000000 transactions with output suppressed...
+Vuser 76:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 76:VU 76 : Assigning WID=75 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 76:VU 76 : Assigning WID=175 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 76:VU 76 : Assigning WID=275 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 76:VU 76 : Assigning WID=375 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 77:RUNNING
+Vuser 77:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 77:VU 77 : Assigning WID=76 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 77:VU 77 : Assigning WID=176 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 77:VU 77 : Assigning WID=276 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 77:VU 77 : Assigning WID=376 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 78:RUNNING
+Vuser 73:Processing 60000000 transactions with output suppressed...
+Vuser 74:Processing 60000000 transactions with output suppressed...
+Vuser 72:Processing 60000000 transactions with output suppressed...
+Vuser 76:Processing 60000000 transactions with output suppressed...
+Vuser 75:Processing 60000000 transactions with output suppressed...
+Vuser 78:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 78:VU 78 : Assigning WID=77 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 78:VU 78 : Assigning WID=177 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 78:VU 78 : Assigning WID=277 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 78:VU 78 : Assigning WID=377 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 79:RUNNING
+Vuser 79:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 79:VU 79 : Assigning WID=78 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 79:VU 79 : Assigning WID=178 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 80:RUNNING
+Vuser 79:VU 79 : Assigning WID=278 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 79:VU 79 : Assigning WID=378 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 80:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 81:RUNNING
+Vuser 80:VU 80 : Assigning WID=79 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 80:VU 80 : Assigning WID=179 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 80:VU 80 : Assigning WID=279 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 80:VU 80 : Assigning WID=379 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 78:Processing 60000000 transactions with output suppressed...
+Vuser 77:Processing 60000000 transactions with output suppressed...
+Vuser 81:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 81:VU 81 : Assigning WID=80 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 81:VU 81 : Assigning WID=180 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 81:VU 81 : Assigning WID=280 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 81:VU 81 : Assigning WID=380 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 82:RUNNING
+Vuser 79:Processing 60000000 transactions with output suppressed...
+Vuser 82:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 83:RUNNING
+Vuser 82:VU 82 : Assigning WID=81 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 82:VU 82 : Assigning WID=181 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 82:VU 82 : Assigning WID=281 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 82:VU 82 : Assigning WID=381 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 83:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 83:VU 83 : Assigning WID=82 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 83:VU 83 : Assigning WID=182 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 83:VU 83 : Assigning WID=282 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 83:VU 83 : Assigning WID=382 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 84:RUNNING
+Vuser 80:Processing 60000000 transactions with output suppressed...
+Vuser 84:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 84:VU 84 : Assigning WID=83 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 84:VU 84 : Assigning WID=183 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 84:VU 84 : Assigning WID=283 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 84:VU 84 : Assigning WID=383 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 85:RUNNING
+Vuser 85:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 85:VU 85 : Assigning WID=84 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 85:VU 85 : Assigning WID=184 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 85:VU 85 : Assigning WID=284 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 85:VU 85 : Assigning WID=384 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 86:RUNNING
+Vuser 86:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 86:VU 86 : Assigning WID=85 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 86:VU 86 : Assigning WID=185 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 86:VU 86 : Assigning WID=285 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 86:VU 86 : Assigning WID=385 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 87:RUNNING
+Vuser 81:Processing 60000000 transactions with output suppressed...
+Vuser 82:Processing 60000000 transactions with output suppressed...
+Vuser 84:Processing 60000000 transactions with output suppressed...
+Vuser 87:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 87:VU 87 : Assigning WID=86 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 87:VU 87 : Assigning WID=186 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 87:VU 87 : Assigning WID=286 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 87:VU 87 : Assigning WID=386 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 88:RUNNING
+Vuser 83:Processing 60000000 transactions with output suppressed...
+Vuser 88:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 88:VU 88 : Assigning WID=87 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 88:VU 88 : Assigning WID=187 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 88:VU 88 : Assigning WID=287 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 88:VU 88 : Assigning WID=387 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 89:RUNNING
+Vuser 89:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 90:RUNNING
+Vuser 89:VU 89 : Assigning WID=88 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 89:VU 89 : Assigning WID=188 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 89:VU 89 : Assigning WID=288 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 89:VU 89 : Assigning WID=388 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 90:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 90:VU 90 : Assigning WID=89 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 90:VU 90 : Assigning WID=189 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 90:VU 90 : Assigning WID=289 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 90:VU 90 : Assigning WID=389 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 91:RUNNING
+Vuser 85:Processing 60000000 transactions with output suppressed...
+Vuser 91:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 91:VU 91 : Assigning WID=90 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 91:VU 91 : Assigning WID=190 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 91:VU 91 : Assigning WID=290 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 91:VU 91 : Assigning WID=390 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 92:RUNNING
+Vuser 92:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 92:VU 92 : Assigning WID=91 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 92:VU 92 : Assigning WID=191 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 92:VU 92 : Assigning WID=291 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 92:VU 92 : Assigning WID=391 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 93:RUNNING
+Vuser 93:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 93:VU 93 : Assigning WID=92 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 93:VU 93 : Assigning WID=192 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 93:VU 93 : Assigning WID=292 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 93:VU 93 : Assigning WID=392 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 94:RUNNING
+Vuser 94:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 94:VU 94 : Assigning WID=93 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 94:VU 94 : Assigning WID=193 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 94:VU 94 : Assigning WID=293 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 94:VU 94 : Assigning WID=393 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 95:RUNNING
+Vuser 91:Processing 60000000 transactions with output suppressed...
+Vuser 86:Processing 60000000 transactions with output suppressed...
+Vuser 88:Processing 60000000 transactions with output suppressed...
+Vuser 87:Processing 60000000 transactions with output suppressed...
+Vuser 89:Processing 60000000 transactions with output suppressed...
+Vuser 90:Processing 60000000 transactions with output suppressed...
+Vuser 95:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 95:VU 95 : Assigning WID=94 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 95:VU 95 : Assigning WID=194 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 95:VU 95 : Assigning WID=294 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 95:VU 95 : Assigning WID=394 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 96:RUNNING
+Vuser 96:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 96:VU 96 : Assigning WID=95 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 96:VU 96 : Assigning WID=195 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 96:VU 96 : Assigning WID=295 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 96:VU 96 : Assigning WID=395 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 97:RUNNING
+Vuser 97:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 97:VU 97 : Assigning WID=96 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 97:VU 97 : Assigning WID=196 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 97:VU 97 : Assigning WID=296 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 97:VU 97 : Assigning WID=396 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 98:RUNNING
+Vuser 98:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 98:VU 98 : Assigning WID=97 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 98:VU 98 : Assigning WID=197 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 98:VU 98 : Assigning WID=297 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 98:VU 98 : Assigning WID=397 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 99:RUNNING
+Vuser 95:Processing 60000000 transactions with output suppressed...
+Vuser 94:Processing 60000000 transactions with output suppressed...
+Vuser 92:Processing 60000000 transactions with output suppressed...
+Vuser 93:Processing 60000000 transactions with output suppressed...
+Vuser 99:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 99:VU 99 : Assigning WID=98 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 99:VU 99 : Assigning WID=198 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 99:VU 99 : Assigning WID=298 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 99:VU 99 : Assigning WID=398 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 100:RUNNING
+Vuser 100:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 100:VU 100 : Assigning WID=99 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 100:VU 100 : Assigning WID=199 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 100:VU 100 : Assigning WID=299 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 100:VU 100 : Assigning WID=399 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 101:RUNNING
+Vuser 101:Ssl_cipher ECDHE-RSA-AES128-GCM-SHA256
+Vuser 101:VU 101 : Assigning WID=100 based on VU count 100, Warehouses = 400 (1 out of 4)
+Vuser 101:VU 101 : Assigning WID=200 based on VU count 100, Warehouses = 400 (2 out of 4)
+Vuser 101:VU 101 : Assigning WID=300 based on VU count 100, Warehouses = 400 (3 out of 4)
+Vuser 101:VU 101 : Assigning WID=400 based on VU count 100, Warehouses = 400 (4 out of 4)
+Vuser 96:Processing 60000000 transactions with output suppressed...
+Vuser 97:Processing 60000000 transactions with output suppressed...
+Vuser 98:Processing 60000000 transactions with output suppressed...
+Vuser 99:Processing 60000000 transactions with output suppressed...
+Vuser 101:Processing 60000000 transactions with output suppressed...
+Vuser 100:Processing 60000000 transactions with output suppressed...
+Vuser 1:Rampup 1 minutes complete ...
+Vuser 1:Rampup 2 minutes complete ...
+Vuser 1:Rampup complete, Taking start Transaction Count.
+Vuser 1:Timing test period of 30 in minutes
+Vuser 1:1 ...,
+Vuser 1:2 ...,
+Vuser 1:3 ...,
+Vuser 1:4 ...,
+Vuser 1:5 ...,
+Vuser 1:6 ...,
+Vuser 1:7 ...,
+Vuser 1:8 ...,
+Vuser 1:9 ...,
+Vuser 1:10 ...,
+Vuser 1:11 ...,
+Vuser 1:12 ...,
+Vuser 1:13 ...,
+Vuser 1:14 ...,
+Vuser 1:15 ...,
+Vuser 1:16 ...,
+Vuser 1:17 ...,
+Vuser 1:18 ...,
+Vuser 1:19 ...,
+Vuser 1:20 ...,
+Vuser 1:21 ...,
+Vuser 1:22 ...,
+Vuser 1:23 ...,
+Vuser 1:24 ...,
+Vuser 1:25 ...,
+Vuser 1:26 ...,
+Vuser 1:27 ...,
+Vuser 1:28 ...,
+Vuser 1:29 ...,
+Vuser 1:30 ...,
+Vuser 1:Test complete, Taking end Transaction Count.
+Vuser 1:100 Active Virtual Users configured
+Vuser 1:TEST RESULT : System achieved 2335 NOPM from 5432 MySQL TPM
+Vuser 1:FINISHED SUCCESS
+Vuser 33:FINISHED SUCCESS
+Vuser 36:FINISHED SUCCESS
+Vuser 35:FINISHED SUCCESS
+Vuser 66:FINISHED SUCCESS
+Vuser 61:FINISHED SUCCESS
+Vuser 56:FINISHED SUCCESS
+Vuser 21:FINISHED SUCCESS
+Vuser 13:FINISHED SUCCESS
+Vuser 67:FINISHED SUCCESS
+Vuser 28:FINISHED SUCCESS
+Vuser 29:FINISHED SUCCESS
+Vuser 18:FINISHED SUCCESS
+Vuser 81:FINISHED SUCCESS
+Vuser 53:FINISHED SUCCESS
+Vuser 62:FINISHED SUCCESS
+Vuser 80:FINISHED SUCCESS
+Vuser 37:FINISHED SUCCESS
+Vuser 24:FINISHED SUCCESS
+Vuser 11:FINISHED SUCCESS
+Vuser 85:FINISHED SUCCESS
+Vuser 52:FINISHED SUCCESS
+Vuser 97:FINISHED SUCCESS
+Vuser 46:FINISHED SUCCESS
+Vuser 7:FINISHED SUCCESS
+Vuser 34:FINISHED SUCCESS
+Vuser 5:FINISHED SUCCESS
+Vuser 8:FINISHED SUCCESS
+Vuser 101:FINISHED SUCCESS
+Vuser 86:FINISHED SUCCESS
+Vuser 2:FINISHED SUCCESS
+Vuser 73:FINISHED SUCCESS
+Vuser 23:FINISHED SUCCESS
+Vuser 14:FINISHED SUCCESS
+Vuser 43:FINISHED SUCCESS
+jobid=6442DAC65F9D03E203031363
+hammerdb>Vuser 40:FINISHED SUCCESS
+Vuser 48:FINISHED SUCCESS
+Vuser 3:FINISHED SUCCESS
+Vuser 20:FINISHED SUCCESS
+Vuser 9:FINISHED SUCCESS
+Vuser 22:FINISHED SUCCESS
+Vuser 72:FINISHED SUCCESS
+Vuser 32:FINISHED SUCCESS
+Vuser 4:FINISHED SUCCESS
+Vuser 10:FINISHED SUCCESS
+Vuser 38:FINISHED SUCCESS
+Vuser 30:FINISHED SUCCESS
+Vuser 44:FINISHED SUCCESS
+Vuser 27:FINISHED SUCCESS
+Vuser 68:FINISHED SUCCESS
+Vuser 15:FINISHED SUCCESS
+Vuser 39:FINISHED SUCCESS
+Vuser 49:FINISHED SUCCESS
+Vuser 16:FINISHED SUCCESS
+Vuser 47:FINISHED SUCCESS
+Vuser 12:FINISHED SUCCESS
+Vuser 26:FINISHED SUCCESS
+Vuser 25:FINISHED SUCCESS
+Vuser 60:FINISHED SUCCESS
+Vuser 78:FINISHED SUCCESS
+Vuser 64:FINISHED SUCCESS
+Vuser 17:FINISHED SUCCESS
+Vuser 6:FINISHED SUCCESS
+Vuser 19:FINISHED SUCCESS
+Vuser 79:FINISHED SUCCESS
+Vuser 41:FINISHED SUCCESS
+Vuser 75:FINISHED SUCCESS
+Vuser 58:FINISHED SUCCESS
+Vuser 54:FINISHED SUCCESS
+Vuser 84:FINISHED SUCCESS
+Vuser 42:FINISHED SUCCESS
+Vuser 99:FINISHED SUCCESS
+Vuser 69:FINISHED SUCCESS
+Vuser 77:FINISHED SUCCESS
+Vuser 51:FINISHED SUCCESS
+Vuser 45:FINISHED SUCCESS
+Vuser 87:FINISHED SUCCESS
+Vuser 71:FINISHED SUCCESS
+Vuser 50:FINISHED SUCCESS
+Vuser 31:FINISHED SUCCESS
+Vuser 59:FINISHED SUCCESS
+Vuser 88:FINISHED SUCCESS
+Vuser 74:FINISHED SUCCESS
+Vuser 92:FINISHED SUCCESS
+Vuser 93:FINISHED SUCCESS
+Vuser 98:FINISHED SUCCESS
+Vuser 65:FINISHED SUCCESS
+Vuser 57:FINISHED SUCCESS
+Vuser 82:FINISHED SUCCESS
+Vuser 76:FINISHED SUCCESS
+Vuser 96:FINISHED SUCCESS
+Vuser 70:FINISHED SUCCESS
+Vuser 55:FINISHED SUCCESS
+Vuser 91:FINISHED SUCCESS
+Vuser 89:FINISHED SUCCESS
+Vuser 63:FINISHED SUCCESS
+Vuser 94:FINISHED SUCCESS
+Vuser 100:FINISHED SUCCESS
+Vuser 83:FINISHED SUCCESS
+Vuser 95:FINISHED SUCCESS
+Vuser 90:FINISHED SUCCESS
+ALL VIRTUAL USERS COMPLETE

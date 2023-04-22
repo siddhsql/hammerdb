@@ -1,0 +1,37 @@
+hammerdb>print dict
+Dictionary Settings for PostgreSQL
+connection {
+ pg_host    = x.x.x.x
+ pg_port    = 5432
+ pg_sslmode = prefer
+}
+tpcc       {
+ pg_count_ware       = 400
+ pg_num_vu           = 100
+ pg_superuser        = hammerdb
+ pg_superuserpass    = xxx
+ pg_defaultdbase     = hammerdb
+ pg_user             = hammerdb
+ pg_pass             = xxx
+ pg_dbase            = hammerdb
+ pg_tspace           = pg_default
+ pg_vacuum           = false
+ pg_dritasnap        = false
+ pg_oracompat        = false
+ pg_cituscompat      = false
+ pg_storedprocs      = false
+ pg_partition        = false
+ pg_total_iterations = 60000000
+ pg_raiseerror       = false
+ pg_keyandthink      = false
+ pg_driver           = timed
+ pg_rampup           = 2
+ pg_duration         = 30
+ pg_allwarehouse     = true
+ pg_timeprofile      = false
+ pg_async_scale      = false
+ pg_async_client     = 1
+ pg_async_verbose    = false
+ pg_async_delay      = 1000
+ pg_connect_pool     = false
+}
