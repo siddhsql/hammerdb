@@ -31,7 +31,7 @@ did not terminate after the `30` minute duration. Server kept on showing running
 The second attempt was done with `pg_raiseerror=true`. With this setting the threads that receive an error are aborted and thus the contention
 (concurrency) goes down. The third attempt was done with same config as the first attempt, namely that `pg_raiseerror=false` and this time I did not get
 unusable runs although there were many serialization errors and `invalid transaction termination`.
-MySQL is with `raiseerror=false` as I believe that is the _right_ setting to simulate concurrent load and to _judge_ the performance against.
+MySQL is with `raiseerror=false` as I believe that is the _right_ setting to simulate a _sustained_ concurrent load and to _judge_ the performance against.
 From the [docs](https://www.hammerdb.com/docs/ch04s06.html):
 
 >If set to TRUE on detecting an error the user will report the error into the HammerDB console and then terminate execution. If set to FALSE the virtual user will ignore the error and proceed with executing the next transaction.
@@ -175,7 +175,9 @@ The [script](hammerdb_mysql_test_script.tcl) that runs the perf test.
 
 The [script](hammerdb_pg_test_script.tcl) that runs the perf test.
 
-## Running Pg with `pg_raiseerror=true`
+## Appendix
+
+### Running Pg with `pg_raiseerror=true`
 
 After first unsuccessful attempt with Pg, I then re-ran Pg tests but this time I set `pg_raiseerror=true`.
 This time I was able to get better luck with Pg and got following numbers:
@@ -239,3 +241,28 @@ are short. If the contention is high and transactions are long lived, then SSI s
 end up executing many CPU instructions that will not lead to any useful work whereas with 2PL, the conflicting transactions will wait for their turn and
 CPU resources will not be wasted on work that gets thrown away. The downside of locks is that they are risky. Bugs happen in the code and if there is a
 lock placed erroneously it can be devastating and catastrophic.
+
+### Debugging Notes
+
+[pg sprocs](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl)
+[tpcccommon](https://github.com/TPC-Council/HammerDB/blob/master/modules/tpcccommon-1.0.tm)
+
+As I had suspected, [pgoltp.tcl](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl#L2319):
+
+```
+set choice [ RandomNumber 1 23 ]
+            if {$choice <= 10} {
+                puts "new order"
+                if { $KEYANDTHINK } { keytime 18 }
+                set curn_no [ pick_cursor $neworder_policy [ join $neworder_cursors ] $nocnt $nolen ]
+                set cursor_position [ lsearch $neworder_cursors $curn_no ]
+                set lda_no [ lindex [ join $csneworder ] $cursor_position ]
+                neword $lda_no $w_id $w_id_input $RAISEERROR $ora_compatible $pg_storedprocs
+                incr nocnt
+```
+
+the NOPM counter is incremented irrespective of whether the call to `neword` was successful or not. So in that case
+all the results are meaningless and this tool is of no use. It will always favor Pg over MySQL irrespective of whether
+`RAISEERROR` is `true` or `false`. When `RAISEERROR` is `true`, Pg threads will get aborted whereas MySQL will
+continue to get hammered by many more threads and when `RAISEERROR` is `false`, even if the call to `neword` fails,
+HammerDB will keep on merrily incrementing NOPM count.
