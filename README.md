@@ -332,3 +332,17 @@ hammerdb=> select d_next_o_id from district limit 10;
         3207
 (10 rows)
 ```
+
+```
+hammerdb=> select count(*) from new_order;
+  count
+---------
+ 3,591,798
+(1 row)
+
+hammerdb=> select sum(d_next_o_id) from district;
+   sum
+----------
+ 12,932,708
+(1 row)
+```
