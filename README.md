@@ -291,7 +291,7 @@ set tpm [ expr {($end_trans - $start_trans)/$durmin} ]
 set nopm [ expr {($end_nopm - $start_nopm)/$durmin} ]
 ```
 
-How stupid can that be! This is so wrong on so many counts:
+I am not sure if this logic is correct:
 
 1. Why is he taking the `d_next_o_id` of `district` to calculate count of new orders?
 2. Why is he summing the `d_next_o_id` column (which is not a `0`, `1` column) to get the count?
