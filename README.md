@@ -245,6 +245,7 @@ lock placed erroneously it can be devastating and catastrophic.
 ### Debugging Notes
 
 [pg sprocs](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl)
+
 [tpcccommon](https://github.com/TPC-Council/HammerDB/blob/master/modules/tpcccommon-1.0.tm)
 
 As I had suspected, [pgoltp.tcl](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl#L2319):
@@ -266,3 +267,68 @@ all the results are meaningless and this tool is of no use. It will always favor
 `RAISEERROR` is `true` or `false`. When `RAISEERROR` is `true`, Pg threads will get aborted whereas MySQL will
 continue to get hammered by many more threads and when `RAISEERROR` is `false`, even if the call to `neword` fails,
 HammerDB will keep on merrily incrementing NOPM count.
+
+Hold on, it gets better. Above is not the code that is computing NOPM. I [modified](pgoltp.tcl) the code so that `neword` returns a `success` or `error`
+and based on that increment the `nocnt` but it did not change the NOPM count. The code that is computing NOPM is like this I believe:
+
+[Line 2905](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl#L2905) or
+[Line 96](hammerdb_pg_test_script.tcl#L96):
+
+```
+pg_select $lda1 "select sum(d_next_o_id) from district" o_id_arr {
+    set start_nopm $o_id_arr(sum)
+}
+```
+
+[Line 2944](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl#L2944) or
+[Line 135](hammerdb_pg_test_script.tcl#L135):
+
+```
+pg_select $lda1 "select sum(d_next_o_id) from district" o_id_arr {
+    set end_nopm $o_id_arr(sum)
+}
+set tpm [ expr {($end_trans - $start_trans)/$durmin} ]
+set nopm [ expr {($end_nopm - $start_nopm)/$durmin} ]
+```
+
+How stupid can that be! This is so wrong on so many counts:
+
+1. Why is he taking the `d_next_o_id` of `district` to calculate count of new orders?
+2. Why is he summing the `d_next_o_id` column (which is not a `0`, `1` column) to get the count?
+
+```
+hammerdb=> \d district
+                       Table "public.district"
+   Column    |         Type          | Collation | Nullable | Default
+-------------+-----------------------+-----------+----------+---------
+ d_w_id      | integer               |           | not null |
+ d_next_o_id | integer               |           | not null |
+ d_id        | smallint              |           | not null |
+ d_ytd       | numeric(12,2)         |           | not null |
+ d_tax       | numeric(4,4)          |           | not null |
+ d_name      | character varying(10) |           | not null |
+ d_street_1  | character varying(20) |           | not null |
+ d_street_2  | character varying(20) |           | not null |
+ d_city      | character varying(20) |           | not null |
+ d_state     | character(2)          |           | not null |
+ d_zip       | character(9)          |           | not null |
+Indexes:
+    "district_i1" PRIMARY KEY, btree (d_w_id, d_id)
+```
+
+```
+hammerdb=> select d_next_o_id from district limit 10;
+ d_next_o_id
+-------------
+        3207
+        3183
+        3239
+        3228
+        3201
+        3209
+        3217
+        3195
+        3188
+        3207
+(10 rows)
+```
