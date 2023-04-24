@@ -269,7 +269,8 @@ continue to get hammered by many more threads and when `RAISEERROR` is `false`, 
 HammerDB will keep on merrily incrementing NOPM count.
 
 Hold on, it gets better. Above is not the code that is computing NOPM. I [modified](pgoltp.tcl) the code so that `neword` returns a `success` or `error`
-and based on that increment the `nocnt` but it did not change the NOPM count. The code that is computing NOPM is like this I believe:
+and based on that increment the `nocnt` but it did not change the NOPM count. I still got `2870` NOPM with `100` vu.
+The code that is computing NOPM is like this I believe:
 
 [Line 2905](https://github.com/TPC-Council/HammerDB/blob/master/src/postgresql/pgoltp.tcl#L2905) or
 [Line 96](hammerdb_pg_test_script.tcl#L96):
@@ -295,6 +296,9 @@ I am not sure if this logic is correct:
 
 1. Why is he taking the `d_next_o_id` of `district` to calculate count of new orders?
 2. Why is he summing the `d_next_o_id` column (which is not a `0`, `1` column) to get the count?
+
+I think I understand now. Each district is filling orders independently so each district has its own next new order id counter which is
+`d_next_o_id`. But the sum of `d_next_o_id` does not match with the row count of `new_order` table.
 
 ```
 hammerdb=> \d district
