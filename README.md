@@ -292,13 +292,16 @@ set tpm [ expr {($end_trans - $start_trans)/$durmin} ]
 set nopm [ expr {($end_nopm - $start_nopm)/$durmin} ]
 ```
 
-I am not sure if this logic is correct:
+Each district is filling orders independently so each district has its own next new order id counter which is `d_next_o_id`. Refer [this](pgoltp.tcl#L94) code in the `neword` sproc:
 
-1. Why is he taking the `d_next_o_id` of `district` to calculate count of new orders?
-2. Why is he summing the `d_next_o_id` column (which is not a `0`, `1` column) to get the count?
+```
+UPDATE district SET d_next_o_id = d_next_o_id + 1 WHERE d_id = no_d_id AND d_w_id = no_w_id RETURNING d_next_o_id, d_tax INTO no_d_next_o_id, no_d_tax;
+o_id := no_d_next_o_id;
+INSERT INTO ORDERS (o_id, o_d_id, o_w_id, o_c_id, o_entry_d, o_ol_cnt, o_all_local) VALUES (o_id, no_d_id, no_w_id, no_c_id, tstamp, no_o_ol_cnt, no_o_all_local);
+INSERT INTO NEW_ORDER (no_o_id, no_d_id, no_w_id) VALUES (o_id, no_d_id, no_w_id);
+```
 
-I think I understand now. Each district is filling orders independently so each district has its own next new order id counter which is
-`d_next_o_id`. But the sum of `d_next_o_id` does not match with the row count of `new_order` table.
+But the sum of `d_next_o_id` does not match with the row count of `new_order` table.
 
 ```
 hammerdb=> \d district
