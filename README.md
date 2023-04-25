@@ -353,3 +353,11 @@ hammerdb=> select sum(d_next_o_id) from district;
  12,932,708
 (1 row)
 ```
+
+This is because of following code inside the `delivery` sproc. [Line 207](pgoltp.tcl#L207):
+
+```
+DELETE FROM new_order WHERE no_w_id = d_w_id AND no_d_id = d_d_id AND no_o_id = d_no_o_id;
+```
+
+which in turn is due to [TPC-C](https://www.tpc.org/tpc_documents_current_versions/pdf/tpc-c_v5.11.0.pdf) specification. Refer section 2.7.4.1 page 42 of the spec.
